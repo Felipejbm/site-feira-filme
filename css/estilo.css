@@ -1,11 +1,3 @@
-:root {
-  --amarelo: #efeee9;
-  --azul: #f1eafc;
-  --azul-claro: #c9e7ff;
-  --azul-forte: #60b7c1;
-  --lilas: #b1a4dc;
-}
-
-.titulo {
-  color: var(--amarelo);
+ul {
+  background-color: blueviolet;
 }
