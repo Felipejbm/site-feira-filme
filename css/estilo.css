@@ -1,3 +1,12 @@
 ul {
   background-color: blueviolet;
 }
+
+.tituloInicio {
+  color: white;
+}
+
+.imgLivro {
+  width: 50%;
+  height: auto;
+}
