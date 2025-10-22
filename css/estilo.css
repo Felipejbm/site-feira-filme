@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+/* Adicionando personalização menu */
+/* Classe já existente */
+.navbar-nav {
+  background-color: rgb(255, 255, 255, 0.25);
+  padding: 0.5em;
+}
+
+>>>>>>> 7e758d379d9fa180d9b5a70f63f0425dce35049d
 .tituloInicio {
   color: white;
   font-size: 500% !important;
