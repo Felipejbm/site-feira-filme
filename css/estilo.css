@@ -1,5 +1,8 @@
-ul {
-    background-color: blueviolet;
+/* Adicionando personalização menu */
+/* Classe já existente */
+.navbar-nav {
+  background-color: rgb(255, 255, 255, 0.25);
+  padding: 0.5em;
 }
 
 .tituloInicio {
