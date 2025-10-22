@@ -11268,17 +11268,29 @@ hr.divider-light {
 }
 
 header.masthead {
+  position: relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url("../assets/img/CameraCinema-Inicio.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover
+    no-repeat;
 }
 header.masthead h1,
 header.masthead .h1 {
   font-size: 2.25rem;
+}
+header.masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00090990;
+  z-index: 0;
+}
+header.masthead .container {
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 992px) {
   header.masthead {
