@@ -475,3 +475,7 @@ header.masthead p {
   opacity: 0.9;
   filter: hue-rotate(0deg) saturate(1.2);
 }
+.masthead-index {
+  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover
+    no-repeat;
+}
