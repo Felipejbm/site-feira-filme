@@ -11271,8 +11271,6 @@ header.masthead {
   position: relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover
-    no-repeat;
 }
 header.masthead h1,
 header.masthead .h1 {

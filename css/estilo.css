@@ -795,3 +795,18 @@ header.masthead p {
     padding: 1.5rem 1.5rem;
   }
 }
+
+.card-creditos {
+  height: auto;
+  box-shadow: none;
+}
+
+.card-creditos:hover {
+  transition: none;
+  box-shadow: none;
+  transform: scale(1);
+}
+
+.masthead-index {
+  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover no-repeat;
+}
