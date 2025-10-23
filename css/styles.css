@@ -82,8 +82,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #f43a3a;
-  --bs-link-hover-color: #f43a3a;
+  --bs-link-color: #f4623a;
+  --bs-link-hover-color: #c34e2e;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -11223,10 +11223,10 @@ hr.divider-light {
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #e72e2e;
+  color: #f4623a;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #e72e2e !important;
+  color: #f4623a !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11271,6 +11271,8 @@ header.masthead {
   position: relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
+  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover
+    no-repeat;
 }
 header.masthead h1,
 header.masthead .h1 {
@@ -11346,7 +11348,7 @@ header.masthead .container {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 58, 58, 0.9);
+  background: rgba(244, 98, 58, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
 }
