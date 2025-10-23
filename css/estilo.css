@@ -1,6 +1,10 @@
+body {
+  background-color: #352f2f;
+}
+
 .page-section,
 .divider {
-  background-color: #e72e2e !important;
+  background-color: #352f2f !important;
 }
 
 .nav-link:hover {
@@ -120,7 +124,6 @@ header.masthead p {
   transition: all 0.5s ease-in-out;
 }
 
-
 /* PÁGINAS DOS CURTAS*/
 .bodycurta {
   background-color: #f8f7f4;
@@ -207,7 +210,6 @@ header.masthead p {
   animation-delay: calc(var(--delay, 0) * 0.3s);
   background: #fff8ee;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
-
 }
 
 .sinopse-texto:hover {
@@ -373,11 +375,15 @@ header.masthead p {
   }
 }
 
-#portfolio {
+#novelas,
+#curtas,
+#autores {
   padding: 40px 20px;
 }
 
-#portfolio h1 {
+#novelas > h1,
+#curtas > h1,
+#autores > h1 {
   color: #e50914;
   font-size: 2.5rem;
   font-weight: 700;
@@ -481,68 +487,67 @@ header.masthead p {
 }
 
 .swiper {
-	width: 100%;
-	padding-top: 50px;
-	padding-bottom: 50px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .swiper-slide {
-	background-position: center;
-	background-size: cover;
-	box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.75);
-	overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.75);
+  overflow: hidden;
 }
 
 .swiper-slide img {
-	display: block;
-	width: 100%;
-	aspect-ratio: 11 / 16;
-	object-fit: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 11 / 16;
+  object-fit: cover;
   background-color: white;
 }
 .swiper-wrapper {
-	padding: 6rem 0;
+  padding: 6rem 0;
 }
 
 .info {
-	position: absolute;
-	bottom: -100%;
-	opacity: 0;
-	left: 0;
-	right: 0;
-	padding: 1rem;
-	background: rgba(0, 0, 0, 0.9);
-	color: #dedede;
-	transition: bottom 0.5s ease-in-out, opacity 0.6s ease-in-out;
-	& h3 {
-		font-weight: 600;
-		margin: 0;
-	}
-	& p {
-		font-size: 1rem;
-		line-height: 1.25rem;
-		font-weight: 100;
-	}
-	& .actions {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem;
-		justify-content: space-between;
-	}
-	& .button {
-		text-decoration: none;
-		color: #ffffff;
-		background: #6c91c2;
-		padding: 0.5rem 1rem;
-		border-radius: 0.25rem;
-	}
+  position: absolute;
+  bottom: -100%;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.9);
+  color: #dedede;
+  transition: bottom 0.5s ease-in-out, opacity 0.6s ease-in-out;
+  & h3 {
+    font-weight: 600;
+    margin: 0;
+  }
+  & p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 100;
+  }
+  & .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+  & .button {
+    text-decoration: none;
+    color: #ffffff;
+    background: #6c91c2;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
 }
 
 .swiper-slide.swiper-slide-active .info {
-	bottom: 0;
-	opacity: 1;
+  bottom: 0;
+  opacity: 1;
 }
-
 
 /* PÁGINAS DOS CURTAS*/
 .bodycurta {
@@ -630,7 +635,6 @@ header.masthead p {
   animation-delay: calc(var(--delay, 0) * 0.3s);
   background: #fff8ee;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
-
 }
 
 .sinopse-texto:hover {
@@ -814,7 +818,7 @@ header.masthead p {
 }
 
 .p-creditos {
-  font-size: 1em !important;  
+  font-size: 1em !important;
 }
 
 .card-header-creditos {
@@ -822,5 +826,6 @@ header.masthead p {
 }
 
 .masthead-index {
-  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover no-repeat;
+  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover
+    no-repeat;
 }
