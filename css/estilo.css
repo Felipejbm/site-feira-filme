@@ -837,3 +837,21 @@ header.masthead p {
 .masthead-index {
   background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover no-repeat;
 }
+
+.footer-creditos {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.a-copyright {
+  color: #ffffff !important;
+}
+
+.text-footer-creditos {
+  font-size: 1em !important;
+}
+
+.img-footer {
+  width: 100%;
+  height: auto;
+}
