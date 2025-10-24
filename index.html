@@ -229,7 +229,7 @@
                     em um cortiço no Rio de Janeiro, destacando as relações
                     entre seus moradores. Azevedo analisa o ser humano como
                     resultado do meio, da raça e do ambiente, expondo temas como
-                    a exploração, a ambição e o preconceito social
+                    a exploração e o preconceito social
                   </p>
                   <a href="videos/curtas/cortico.html">
                     <button>
@@ -686,32 +686,36 @@
   </body>
   <script>
     var swiper = new Swiper(".movies", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 3.5,
-      loop: true,
-      coverflowEffect: {
-        rotate: 25,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-        },
-        640: {
-          slidesPerView: 2.5,
-        },
-        768: {
-          slidesPerView: 3.5,
-        },
-      },
-    });
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 3,
+  loop: true,
+  coverflowEffect: {
+    rotate: 25,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      centeredSlides: true
+    },
+    640: {
+      slidesPerView: 3,
+      centeredSlides: true
+    },
+    1024: {
+      slidesPerView: 3,
+      centeredSlides: true
+    },
+  },
+});
+
   </script>
 </html>
