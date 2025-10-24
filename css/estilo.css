@@ -97,7 +97,7 @@ header.masthead p {
   height: 70%;
 }
 
-.card button {
+.card .botaoCurta {
   height: 35px;
   cursor: pointer;
   border: none;
@@ -108,7 +108,7 @@ header.masthead p {
   transition: 0.5s ease-in-out;
 }
 
-.card button:hover {
+.card .botaoCurta:hover {
   transform: scale(0.95) translateX(-5px);
 }
 
@@ -121,7 +121,6 @@ header.masthead p {
       align-items: center;
   }
 }
-
 
 /* PÁGINAS DOS CURTAS*/
 .bodycurta {

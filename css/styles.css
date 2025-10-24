@@ -424,10 +424,8 @@ button,
   appearance: button;
   -webkit-appearance: button;
 }
-button:not(:disabled),
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
+
+.custom-btn {
   cursor: pointer;
   background-color: #565e64;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z'/%3E%3C/svg%3E");
@@ -438,6 +436,7 @@ button:not(:disabled),
   height: 40px;
   border: none;
 }
+
 
 
 ::-moz-focus-inner {
