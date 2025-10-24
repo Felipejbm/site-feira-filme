@@ -495,10 +495,6 @@ header.masthead p {
   filter: hue-rotate(0deg) saturate(1.2);
 }
 
-.masthead-index {
-  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover no-repeat;
-}
-
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -870,7 +866,7 @@ header.masthead p {
 }
 
 .masthead-index {
-  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover no-repeat;
+  background: url("../assets/img/background-cinema.jpg") center/cover no-repeat;
 }
 
 /* Estiliza todos os iframes */
