@@ -513,6 +513,10 @@ header.masthead p {
   padding: 6rem 0;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #e72e2e  !important;
+}
+
 .info {
   position: absolute;
   bottom: -100%;
