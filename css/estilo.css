@@ -867,6 +867,10 @@ header.masthead p {
 
 .masthead-index {
   background: url("../assets/img/background-cinema.jpg") center/cover no-repeat;
+
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* Estiliza todos os iframes */
