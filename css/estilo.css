@@ -809,6 +809,10 @@ header.masthead p {
   margin-top: 4em;
   height: auto;
   box-shadow: none;
+
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .card-creditos:hover {
@@ -828,6 +832,12 @@ header.masthead p {
 
 .card-header-creditos {
   padding-top: 8px !important;
+}
+
+.modal-creditos {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .masthead-index {
@@ -853,3 +863,27 @@ iframe:hover {
   transform: scale(1.05);
 }
 
+.footer-creditos {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.a-copyright {
+  color: #ffffff !important;
+}
+
+.text-footer-creditos {
+  font-size: 1em !important;
+}
+
+.img-footer {
+  width: 100%;
+  height: auto;
+}
+
+.body-creditos {
+  background-color: none;
+  background-image: url("../assets/img/background-tema-cinema.jpeg");
+  background-repeat: repeat;
+  background-size: auto;
+}
