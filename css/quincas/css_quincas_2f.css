@@ -1,6 +1,6 @@
 /* Base para os dois containers */
-.container_2c,
-.container_2c_2 {
+.container_2f,
+.container_2f_2 {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -8,7 +8,7 @@
 }
 
 /* Itens do container 1 */
-.container_2c > div {
+.container_2f > div {
   width: 250px;
   height: 300px;
   border-radius: 0.5rem;
@@ -19,12 +19,12 @@
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.container_2c > div:nth-of-type(1) { background: url('../../css/cortico/img/2c1.jpg') center/cover no-repeat; }
-.container_2c > div:nth-of-type(2) { background: url('../../css/cortico/img/2c3.jpg') center/cover no-repeat; }
-.container_2c > div:nth-of-type(3) { background: url('../../css/cortico/img/2c6.jpg') center/cover no-repeat; }
+.container_2f > div:nth-of-type(1) { background: url('../../css/quincas/img/2f.jpg') center/cover no-repeat; }
+.container_2f > div:nth-of-type(2) { background: url('../../css/quincas/img/2f3.jpg') center/cover no-repeat; }
+.container_2f > div:nth-of-type(3) { background: url('../../css/quincas/img/2f1.jpg') center/cover no-repeat; }
 
 /* Itens do container 2 */
-.container_2c_2 > div {
+.container_2f_2 > div {
   width: 250px;
   height: 300px;
   border-radius: 0.5rem;
@@ -35,13 +35,13 @@
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.container_2c_2 > div:nth-of-type(1) { background: url('../../css/cortico/img/2c4.jpg') center/cover no-repeat; }
-.container_2c_2 > div:nth-of-type(2) { background: url('../../css/cortico/img/2c5.jpg') center/cover no-repeat; }
-.container_2c_2 > div:nth-of-type(3) { background: url('../../css/cortico/img/2c2.jpg') center/cover no-repeat; }
+.container_2f_2 > div:nth-of-type(1) { background: url('../../css/quincas/img/2f.jpg') center/cover no-repeat; }
+.container_2f_2 > div:nth-of-type(2) { background: url('../../css/quincas/img/2f4.jpg') center/cover no-repeat; }
+.container_2f_2 > div:nth-of-type(3) { background: url('../../css/cortico/img/2f6.jpg') center/cover no-repeat; }
 
 /* Efeito de hover container 1 */
-.container_2c > div .content_2c,
-.container_2c_2 > div .content_2c_2 {
+.container_2f > div .content_2f,
+.container_2f_2 > div .content_2f_2 {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -59,29 +59,29 @@
   transition: opacity 0.5s, transform 0.5s 0.2s, visibility 0.5s;
 }
 
-.container_2c > div:hover .content_2c,
-.container_2c_2 > div:hover .content_2c_2 {
+.container_2f > div:hover .content_2f,
+.container_2f_2 > div:hover .content_2f_2 {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.container_2c > div:hover,
-.container_2c_2 > div:hover {
+.container_2f > div:hover,
+.container_2f_2 > div:hover {
   transform: translateY(-30px);
   box-shadow: 1px 3px 15px #7645d8;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .container_2c,
-  .container_2c_2 {
+  .container_2f,
+  .container_2f_2 {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .container_2c > div,
-  .container_2c_2 > div {
+  .container_2f > div,
+  .container_2f_2 > div {
     width: 200px;
     height: 200px;
     margin: 10px;
