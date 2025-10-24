@@ -19,9 +19,9 @@
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.container_2c > div:nth-of-type(1) { background: url('../../css/cortico/img/2c1.jpg') center/cover no-repeat; }
-.container_2c > div:nth-of-type(2) { background: url('../../css/cortico/img/2c2.jpg') center/cover no-repeat; }
-.container_2c > div:nth-of-type(3) { background: url('../../css/cortico/img/2c3.jpg') center/cover no-repeat; }
+.container_2c > div:nth-of-type(1) { background: url('../../css/martha/img/2c1.jpg') center/cover no-repeat; }
+.container_2c > div:nth-of-type(2) { background: url('../../css/martha/img/2c2.jpg') center/cover no-repeat; }
+.container_2c > div:nth-of-type(3) { background: url('../../css/martha/img/2c3.jpg') center/cover no-repeat; }
 
 /* Itens do container 2 */
 .container_2c_2 > div {
@@ -35,9 +35,8 @@
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.container_2c_2 > div:nth-of-type(1) { background: url('../../css/cortico/img/2c4.jpg') center/cover no-repeat; }
-.container_2c_2 > div:nth-of-type(2) { background: url('../../css/cortico/img/2c5.jpg') center/cover no-repeat; }
-.container_2c_2 > div:nth-of-type(3) { background: url('../../css/cortico/img/2c6.jpg') center/cover no-repeat; }
+.container_2c_2 > div:nth-of-type(1) { background: url('../../css/martha/img/2c4.jpg') center/cover no-repeat; }
+.container_2c_2 > div:nth-of-type(2) { background: url('../../css/martha/img/2c5.jpg') center/cover no-repeat; }
 
 /* Efeito de hover container 1 */
 .container_2c > div .content_2c,
