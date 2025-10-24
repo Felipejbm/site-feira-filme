@@ -36,70 +36,60 @@ header.masthead p {
   width: 100%;
   max-width: 1200px;
   margin: 50px auto;
-  /* centraliza horizontalmente e dá espaço do topo */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Centraliza os cards */
   gap: 20px;
-  /* espaçamento entre os cards */
 }
 
 .card {
-  flex: 1;
-  flex-basis: 300px;
-  flex-grow: 0;
-  height: 440px;
+  width: 270px;
+  height: 396px;
   background: #fff;
   border: 2px solid #fff;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   position: relative;
 }
 
 .card img {
   width: 100%;
   height: 100%;
-  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  object-fit: cover;
+  transition: inherit;
 }
 
 .descriptions {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  inset: 0;
   background-color: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  height: 100%;
-  transition: all 0.7s ease-in-out;
-  padding: 20px;
-  box-sizing: border-box;
+  padding: 5px;
+  padding-top: 10px;
   clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.7s ease-in-out;
 }
 
 .card:hover .descriptions {
-  left: 0px;
-  transition: all 0.7s ease-in-out;
   clip-path: circle(75%);
 }
 
 .card:hover {
-  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
   transform: scale(0.97);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover img {
-  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transform: scale(1.6) rotate(20deg);
   filter: blur(3px);
 }
 
 .card h1 {
   color: #e72e2e;
-  letter-spacing: 1px;
-  margin: 0px;
-  font-size: 30px;
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
 }
 
 .card p {
@@ -110,19 +100,28 @@ header.masthead p {
 .card button {
   height: 35px;
   cursor: pointer;
-  border-style: none;
+  border: none;
   background-color: #e72e2e;
   color: #fff;
   font-size: 15px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
-  transition: all 0.5s ease-in-out;
-  padding: 2%;
+  transition: 0.5s ease-in-out;
 }
 
 .card button:hover {
   transform: scale(0.95) translateX(-5px);
-  transition: all 0.5s ease-in-out;
 }
+
+
+
+@media (max-width: 1500px) {
+  .wrapper {
+      gap: 15px;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
 
 /* PÁGINAS DOS CURTAS*/
 .bodycurta {
@@ -497,13 +496,12 @@ header.masthead p {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.75);
   overflow: hidden;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 90%;
   aspect-ratio: 11 / 16;
   object-fit: cover;
   background-color: white;
@@ -527,6 +525,7 @@ header.masthead p {
   background: rgba(0, 0, 0, 0.9);
   color: #dedede;
   transition: bottom 0.5s ease-in-out, opacity 0.6s ease-in-out;
+  width: 90%; /* MESMO tamanho da imagem horizontalmente ✅ */;
 
   & h3 {
     font-weight: 600;
