@@ -833,3 +833,23 @@ header.masthead p {
 .masthead-index {
   background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover no-repeat;
 }
+
+/* Estiliza todos os iframes */
+iframe {
+  width: 100%;               /* ocupa toda a largura do container */
+  max-width: 800px;          /* limite máximo */
+  aspect-ratio: 16 / 9;      /* mantém proporção */
+  border: none;              /* remove borda padrão */
+  border-radius: 12px;       /* cantos arredondados */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* sombra */
+  display: block;            /* para centralizar com margin */
+  margin: 20px auto;         /* centraliza horizontalmente e dá espaçamento */
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+/* Efeito de zoom ao passar o mouse */
+iframe:hover {
+  transform: scale(1.05);
+}
+
