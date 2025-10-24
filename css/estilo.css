@@ -38,7 +38,8 @@ header.masthead p {
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centraliza os cards */
+  justify-content: center;
+  /* Centraliza os cards */
   gap: 20px;
 }
 
@@ -116,9 +117,9 @@ header.masthead p {
 
 @media (max-width: 1500px) {
   .wrapper {
-      gap: 15px;
-      flex-direction: column;
-      align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -283,11 +284,23 @@ header.masthead p {
   animation: fadeInUp 1.6s ease forwards;
 }
 
-.sessao-video video {
+.sessao-video video,
+.capavideo {
   width: 90%;
   max-width: 960px;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.capavideo+iframe {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.capavideo+iframe.mostrar {
+  display: block;
+  opacity: 1;
 }
 
 /* chuva de emojis */
@@ -379,9 +392,9 @@ header.masthead p {
   padding: 40px 20px;
 }
 
-#novelas > h1,
-#curtas > h1,
-#autores > h1 {
+#novelas>h1,
+#curtas>h1,
+#autores>h1 {
   color: #e50914;
   font-size: 2.5rem;
   font-weight: 700;
@@ -511,7 +524,7 @@ header.masthead p {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #e72e2e  !important;
+  background-color: #e72e2e !important;
 }
 
 .info {
@@ -524,17 +537,21 @@ header.masthead p {
   background: rgba(0, 0, 0, 0.9);
   color: #dedede;
   transition: bottom 0.5s ease-in-out, opacity 0.6s ease-in-out;
-  width: 90%; /* MESMO tamanho da imagem horizontalmente ✅ */;
+  width: 90%;
+  /* MESMO tamanho da imagem horizontalmente ✅ */
+  ;
 
   & h3 {
     font-weight: 600;
     margin: 0;
   }
+
   & p {
     font-size: 1rem;
     line-height: 1.25rem;
     font-weight: 100;
   }
+
   & .actions {
     display: flex;
     flex-wrap: wrap;
@@ -542,7 +559,7 @@ header.masthead p {
     justify-content: space-between;
   }
 
-& .button {
+  & .button {
     text-decoration: none;
     color: #ffffff;
     background: #6c91c2;
@@ -848,14 +865,22 @@ header.masthead p {
 
 /* Estiliza todos os iframes */
 iframe {
-  width: 100%;               /* ocupa toda a largura do container */
-  max-width: 800px;          /* limite máximo */
-  aspect-ratio: 16 / 9;      /* mantém proporção */
-  border: none;              /* remove borda padrão */
-  border-radius: 12px;       /* cantos arredondados */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* sombra */
-  display: block;            /* para centralizar com margin */
-  margin: 20px auto;         /* centraliza horizontalmente e dá espaçamento */
+  width: 100%;
+  /* ocupa toda a largura do container */
+  max-width: 800px;
+  /* limite máximo */
+  aspect-ratio: 16 / 9;
+  /* mantém proporção */
+  border: none;
+  /* remove borda padrão */
+  border-radius: 12px;
+  /* cantos arredondados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  /* sombra */
+  display: block;
+  /* para centralizar com margin */
+  margin: 20px auto;
+  /* centraliza horizontalmente e dá espaçamento */
   overflow: hidden;
   transition: transform 0.3s;
 }
@@ -891,7 +916,9 @@ iframe:hover {
 }
 
 ul {
-  list-style: none; /* remove as bolinhas */
-  padding: 0;       /* remove o espaçamento padrão à esquerda */
+  list-style: none;
+  /* remove as bolinhas */
+  padding: 0;
+  /* remove o espaçamento padrão à esquerda */
   margin: 0;
 }
