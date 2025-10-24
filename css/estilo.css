@@ -412,6 +412,7 @@ header.masthead p {
 }
 
 @media (max-width: 992px) {
+
   .col-lg-4,
   .col-sm-6 {
     flex: 1 1 calc(50% - 20px);
@@ -420,6 +421,7 @@ header.masthead p {
 }
 
 @media (max-width: 600px) {
+
   .col-lg-4,
   .col-sm-6 {
     flex: 1 1 100%;
@@ -481,9 +483,9 @@ header.masthead p {
   opacity: 0.9;
   filter: hue-rotate(0deg) saturate(1.2);
 }
+
 .masthead-index {
-  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover
-    no-repeat;
+  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover no-repeat;
 }
 
 .swiper {
@@ -506,6 +508,7 @@ header.masthead p {
   object-fit: cover;
   background-color: white;
 }
+
 .swiper-wrapper {
   padding: 6rem 0;
 }
@@ -520,6 +523,7 @@ header.masthead p {
   background: rgba(0, 0, 0, 0.9);
   color: #dedede;
   transition: bottom 0.5s ease-in-out, opacity 0.6s ease-in-out;
+
   & h3 {
     font-weight: 600;
     margin: 0;
@@ -535,7 +539,8 @@ header.masthead p {
     gap: 0.5rem;
     justify-content: space-between;
   }
-  & .button {
+
+& .button {
     text-decoration: none;
     color: #ffffff;
     background: #6c91c2;
@@ -826,6 +831,5 @@ header.masthead p {
 }
 
 .masthead-index {
-  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover
-    no-repeat;
+  background: url("../assets/img/CameraCinema-Inicio.jpg") center/cover no-repeat;
 }
