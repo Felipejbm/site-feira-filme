@@ -883,6 +883,17 @@ iframe:hover {
   height: auto;
 }
 
+.footer-curtas {
+  background-color: #2b2b2b;
+  color: #ffffff;
+
+  width: 100%;
+}
+
+.container-footer-curtas {
+  width: 100%;
+}
+
 .body-creditos {
   background-color: none;
   background: linear-gradient(to right, #4d4c4c, #000000, #5c2727);
