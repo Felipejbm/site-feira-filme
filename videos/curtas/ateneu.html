@@ -20,8 +20,8 @@
         <div class="painel painel-esquerdo"></div>
         <div class="painel painel-direito"></div>
     </div>
-    <div class="container mt-3">
-        <a href="javascript:history.back()" class="btn-voltar-curtas">
+    <div class="container">
+        <a href="../../index.html" class="btn-voltar-curtas">
             <i class="bi bi-arrow-left"></i>
         </a>
     </div>
@@ -65,42 +65,84 @@
 
     <section class="sessao-video">
         <h1 class="mb-4">Curtas Inspirados na Obra:</h1>
+        <h2>2A</h2>
         <div>
+            <div class="poster" onclick="mostrarVideo(this)">
+                <img src="../../assets/img/pagcurtas/capaateneu2a.png" class="img-fluid capavideo" alt="Capa do vídeo">
+            </div>
+
             <iframe src="https://drive.google.com/file/d/1_FytVopCj-0Rsm0kY_sE1kVKbKdJPXJj/preview" frameborder="0"
-                allow="autoplay; encrypted-media; fullscreen" allowfullscreen>>
+                allow="autoplay; fullscreen" allowfullscreen style="width:100%; aspect-ratio:16/9;display: none;">
             </iframe>
-            <div>
-      <h1>Integrantes</h1>
-      <div class="container">
-        <div>
-          <div class="content">
-            <h2>Integrante 1</h2>
-          </div>
-        </div>
-        <div>
-          <div class="content">
-            <h2>Integrante 2</h2>
+            <h1 class="mt-4 mb-4">Integrantes</h1>
+            <div class="container">
+                <div>
+                    <div class="content">
+                        <h2>Integrante 1</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <h2>Integrante 2</h2>
 
-          </div>
-        </div>
-        <div>
-          <div class="content">
-            <h2>Integrante 3</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <h2>Integrante 3</h2>
 
-          </div>
-        </div>
-        <div>
-          <div class="content">
-            <h2>Integrante 4</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <h2>Integrante 4</h2>
 
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        </div>
+    </section>
+    <section class="sessao-video">
+        <h2>2C</h2>
+        <div>
+            <div class="poster" onclick="mostrarVideo(this)">
+                <img src="../../assets/img/pagcurtas/capaateneu2c.png" class="img-fluid capavideo" alt="Capa do vídeo">
+            </div>
+
+            <iframe src="https://drive.google.com/file/d/1_FytVopCj-0Rsm0kY_sE1kVKbKdJPXJj/preview" frameborder="0"
+                allow="autoplay; fullscreen" allowfullscreen style="width:100%; aspect-ratio:16/9;display: none;">
+            </iframe>
+            <h1 class="mt-4 mb-4">Integrantes</h1>
+            <div class="container">
+                <div>
+                    <div class="content">
+                        <h2>Integrante 1</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <h2>Integrante 2</h2>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <h2>Integrante 3</h2>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <h2>Integrante 4</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     </main>
-
     <!-- Footer-->
     <footer class="footer-curtas">
         <div class="container-footer-curtas p-4 border-bottom border-dark">
@@ -157,6 +199,12 @@
                 cortina.style.display = 'none';
             }, 1500);
         });
+
+        function mostrarVideo(elemento) {
+            elemento.style.display = 'none'; // esconde a capa
+            const iframe = elemento.nextElementSibling;
+            iframe.style.display = 'block'; // mostra o vídeo
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
