@@ -75,10 +75,13 @@
     </h1>
     <div>
       <h2>2B</h2>
+      <div class="poster" onclick="mostrarVideo(this)">
+        <img src="../../assets/img/pagcurtas/capacortico2b.png" class="img-fluid capavideo" alt="Capa do vídeo">
+      </div>
       <iframe src="https://drive.google.com/file/d/1o0SvI31fTTvX_8f_UyQrne1DV3xp-_ol/preview" frameborder="0"
-        allow="autoplay; encrypted-media; fullscreen" allowfullscreen>></iframe>
+        allow="autoplay; fullscreen" allowfullscreen style="width:100%; aspect-ratio:16/9;display: none;"></iframe>
       <div>
-        <h1>Integrantes</h1>
+        <h1 class="mb-4 mt-4">Integrantes</h1>
         <div class="container_2b">
           <div>
             <div class="content_2b">
@@ -108,10 +111,13 @@
   </section>
   <section class="sessao-video">
     <h2>2C</h2>
+    <div class="poster" onclick="mostrarVideo(this)">
+      <img src="../../assets/img/pagcurtas/capacortico2c.png" class="img-fluid capavideo" alt="Capa do vídeo">
+    </div>
     <iframe src="https://drive.google.com/file/d/1w4ScNuIreAeMhbB0B_YQ2LedEra7YV7e/preview" frameborder="0"
-      allow="autoplay; encrypted-media; fullscreen" allowfullscreen>></iframe>
+      allow="autoplay; fullscreen" allowfullscreen style="width:100%; aspect-ratio:16/9;display: none;"></iframe>
     <div>
-      <h1>Integrantes</h1>
+      <h1 class="mb-4 mt-4">Integrantes</h1>
       <div class="container_2c">
         <div>
           <div class="content_2c">
@@ -209,6 +215,12 @@
         cortina.style.display = 'none';
       }, 1500);
     });
+
+    function mostrarVideo(elemento) {
+      elemento.style.display = 'none'; // esconde a capa
+      const iframe = elemento.nextElementSibling;
+      iframe.style.display = 'block'; // mostra o vídeo
+    }
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
