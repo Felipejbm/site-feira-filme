@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+  overflow: auto; /* ou hidden */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -97,5 +98,18 @@ body {
         flex: 0 0 200px;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container > div {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
   }
 }

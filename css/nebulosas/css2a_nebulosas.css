@@ -17,6 +17,7 @@ body {
 }
 
 .container_2a {
+  overflow: auto; /* ou hidden */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -88,14 +89,16 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    height: 400px;
 
-    >div {
-      &:hover {
-        flex: 0 0 200px;
-      }
-    }
+@media (max-width: 768px) {
+  .container_2a {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container_2a > div {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
   }
 }

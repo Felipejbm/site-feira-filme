@@ -1,5 +1,18 @@
-body {
+body,.bodycurta html{
   background-color: #352f2f;
+}
+
+/* Fonte para títulos e subtítulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Codystar", sans-serif;
+}
+
+body,.bodycurta p,.card-citacao , li, span, a, button, input {
+  font-family: "Faculty Glyphic", serif;
+}
+
+.bodycurta h1 {
+  font-family: "Faculty Glyphic", serif !important;
 }
 
 .page-section,
@@ -125,7 +138,7 @@ header.masthead p {
 
 /* PÁGINAS DOS CURTAS*/
 .bodycurta {
-  background-color: #f8f7f4;
+  background-color: #352f2f !important;
   font-family: "Merriweather", serif;
   color: #000000;
   overflow-x: hidden;
@@ -177,6 +190,7 @@ header.masthead p {
   padding: 4rem 2rem;
   flex-wrap: wrap;
   position: relative;
+  background-color: #352f2f;
 }
 
 .emoji-container {
@@ -280,7 +294,8 @@ header.masthead p {
 .sessao-video {
   text-align: center;
   padding: 3rem 1rem;
-  background-color: #f3f2ef;
+  background-color: #352f2f !important;
+  color: #dedede;
   animation: fadeInUp 1.6s ease forwards;
 }
 
@@ -314,6 +329,11 @@ header.masthead p {
 }
 
 /* botão voltar */
+
+.fundocotaocurtas{
+  background-color: #352f2f;
+}
+
 .btn-voltar-curtas {
   position: fixed;
   top: 20px;
@@ -385,6 +405,8 @@ header.masthead p {
     padding: 1.5rem 1.5rem;
   }
 }
+
+
 
 #novelas,
 #curtas,

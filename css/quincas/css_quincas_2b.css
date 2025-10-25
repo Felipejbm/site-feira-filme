@@ -1,6 +1,7 @@
 /* Base para os dois containers */
 .container_2b,
 .container_2b_2 {
+  overflow: auto; /* ou hidden */
   display: flex;
   justify-content: center;
   gap: 20px;

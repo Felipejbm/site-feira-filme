@@ -17,6 +17,8 @@ body {
 }
 
 .container_2c {
+  overflow: auto;
+  /* ou hidden */
   width: 100%;
   display: flex;
   justify-content: center;
