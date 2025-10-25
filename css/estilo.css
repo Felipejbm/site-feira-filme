@@ -139,7 +139,7 @@ header.masthead p {
 /* PÁGINAS DOS CURTAS*/
 .bodycurta {
   background-color: #352f2f !important;
-  font-family: "Merriweather", serif;
+  font-family: "Faculty Glyphic", serif;
   color: #000000;
   overflow-x: hidden;
 }
@@ -594,7 +594,7 @@ header.masthead p {
 /* PÁGINAS DOS CURTAS*/
 .bodycurta {
   background-color: #f8f7f4;
-  font-family: "Merriweather", serif;
+  font-family: "Faculty Glyphic", serif;
   color: #000000;
   overflow-x: hidden;
 }
@@ -974,3 +974,4 @@ ul {
   margin: 0;
 
 }
+
