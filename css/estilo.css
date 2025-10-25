@@ -11,7 +11,7 @@ body,.bodycurta p,.card-citacao , li, span, a, button, input {
   font-family: "Faculty Glyphic", serif;
 }
 
-.bodycurta h1 {
+.bodycurta h1 h2 h3 h4 {
   font-family: "Faculty Glyphic", serif !important;
 }
 
@@ -972,4 +972,5 @@ ul {
   padding: 0;
   /* remove o espaçamento padrão à esquerda */
   margin: 0;
+
 }
