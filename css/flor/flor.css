@@ -1,0 +1,89 @@
+/* Base para os dois containers */
+.container,
+.container_2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Itens do container 1 */
+.container > div {
+  width: 250px;
+  height: 300px;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.container > div:nth-of-type(1) { background: url("../flor/img/f1.jpg") center/cover no-repeat; }
+.container > div:nth-of-type(2) { background: url("../flor/img/f2.jpg") center/cover no-repeat; }
+.container > div:nth-of-type(3) { background: url("../flor/img/f3.jpg") center/cover no-repeat; }
+
+/* Itens do container 2 */
+.container_2 > div {
+  width: 250px;
+  height: 300px;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.container_2 > div:nth-of-type(1) { background: url("../flor/img/f4.jpg") center/cover no-repeat; }
+.container_2 > div:nth-of-type(2) { background: url("../flor/img/f5.jpg") center/cover no-repeat; }
+.container_2 > div:nth-of-type(3) { background: url("../flor/img/f6.jpg") center/cover no-repeat; }
+
+/* Efeito de hover container 1 */
+.container > div .content,
+.container_2 > div .content_2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+  background: linear-gradient(0deg, rgba(2,2,46,0.68) 0%, rgba(255,255,255,0) 100%);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 0.5s 0.2s, visibility 0.5s;
+}
+
+.container > div:hover .content,
+.container_2 > div:hover .content_2 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.container > div:hover,
+.container_2 > div:hover {
+  transform: translateY(-30px);
+  box-shadow: 1px 3px 15px #7645d8;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container,
+  .container_2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container > div,
+  .container_2 > div {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+}
